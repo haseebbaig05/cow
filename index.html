@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Cows for Sale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Pakistan Best Cows for Sale</h1>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#cows">Our Cows</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide the best quality cows for dairy and beef purposes. Our cows are healthy, well-fed, and raised in
+            humane conditions.</p>
+    </section>
+
+    <section id="cows">
+        <h2>Our Cows</h2>
+        <div class="cow-gallery">
+            <div class="cow-card">
+                <img src="cow1.jpeg" alt="Cow 1">
+                <h3>Holstein</h3>
+                <p>Price: $800</p>
+            </div>
+            <div class="cow-card">
+                <img src="cow2.jpg" alt="Cow 2">
+                <h3>Jersey</h3>
+                <p>Price: $1000</p>
+            </div>
+            <div class="cow-card">
+                <img src="cow3.jpeg" alt="Cow 3">
+                <h3>Guernsey</h3>
+                <p>Price: $1200</p>
+            </div>
+            <!-- Add more cow cards as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Best Cows for Sale. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="Cows-Agent" agent-id="4d9f354a-8a72-4b01-a582-e586f7cc08e9"
+        language-code="en"></df-messenger>
+</body>
+
+</html>
